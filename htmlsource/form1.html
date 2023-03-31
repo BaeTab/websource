@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        폼태그 
+        form: 사용자가 뭔가를 입력하는 형태로 만들어진 모든 것
+        <form method = "보내는 방법">
+        method:폼 안의 데이터들을 감싸서 보낼 것 인가?(post) 보여주면서 보낼 것 인가?(get)
+                method 속성을 사용하지 않으면 get 방식으로 전송됨
+        action:폼 안의 데이터를 전송할 주소(페이지) 
+
+        1.폼요소
+        1)text 형태 데이터 입력 : <input type = 'text'name ='이름지정'>
+    -->
+    <form method="get" action="link2.html">
+      <p>
+        <label for="name">이름</label>
+        <input type="text" name="name" />
+      </p>
+      <p>
+        <label for="age">나이</label>
+        <input type="text" name="age" />
+      </p>
+      <p>
+        <label>전화번호<input type="text" name="cell" /></label>
+      </p>
+      <p>
+        <!-- submint : 현재 폼을 action 지정한 곳으로  (link2.html)-->
+        <input type="submit" value="전송" />
+        <!-- http://192.168.219.104:5500/htmlsource/link2.html?name=홍길동&age=30
+            이런식으로 입력 정보가 보이는 방식이 get 방식이다.
+        -->
+      </p>
+    </form>
+  </body>
+</html>

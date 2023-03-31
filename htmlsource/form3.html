@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        radio : 여러개중 한개의 옵션을 선택할때 사용
+    -->
+    <form action="form1.html" method="get">
+      <h3>수강 분야</h3>
+      <ul>
+        <label>
+          <li><input type="radio" name="subject" value="문법" id="" />문법</li>
+        </label>
+        <label>
+          <li><input type="radio" name="subject" value="작문" id="" />작문</li>
+        </label>
+        <label>
+          <li><input type="radio" name="subject" value="독해" id="" />독해</li>
+        </label>
+      </ul>
+      <div><input type="submit" value="전송" /></div>
+      <!-- 전송 누를시 체큰한값이 주소에 따라옴
+        http://192.168.219.104:5500/htmlsource/form1.html?subject=작문&subject=독해
+      -->
+    </form>
+  </body>
+</html>
