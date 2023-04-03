@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .ecosystem {
+        color: red;
+      }
+      .tiger {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 우선 순위 -->
+    <!-- 
+        스타일 우선순위 
+        1.!important
+        2.인라인 선언
+        3.아이디
+        4.클래스
+        5.태그 선택자
+        6.전체 선택자
+        7.상속
+
+        스타일 상속 : 자식 요소에서 별도로 스타일을 지정하지 않는 경우 부모의 스타일 속성이 전달됨
+                    글자를 다루는 속성들이 주로 전달
+    -->
+    <div class="ecosystem">
+      <div class="animal">
+        동물
+        <div class="tiger">호랑이</div>
+        <div class="lion">사자</div>
+        <div class="elephant">코끼리</div>
+      </div>
+      <div class="plant">식물</div>
+    </div>
+    <p class="area">
+        <p id="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quidem, recusandae? Repellendus voluptas voluptate magnam porro pariatur sed,
+             hic nihil dignissimos a ad veniam facilis. 
+             Ratione a aperiam minima tenetur iure.
+        </p>
+        <p id="text2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quidem, recusandae? Repellendus voluptas voluptate magnam porro pariatur sed,
+             hic nihil dignissimos a ad veniam facilis. 
+             Ratione a aperiam minima tenetur iure.
+        </p>
+    </p>
+  </body>
+</html>
